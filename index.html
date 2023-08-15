@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gains & Grins Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-4 px-8 border-b-4 border-yellow-500 italic">
+        <nav class="px-4 py-3 lg:flex lg:items-center lg:justify-between">
+            <div class="flex lg:flex-row items-center justify-between">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl md:text-4xl font-extrabold text-yellow-500">Gains & Grins Gym</a>
+                </div>
+                <!-- Hamburger menu button -->
+                <div id="mobile-menu-btn" class="block lg:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none flex">
+                        <svg class="w-10 h-10 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul id="mobile-menu" class="hidden lg:flex lg:flex-row lg:space-x-4 flex-col items-center mt-4 lg:mt-0 lg:ml-auto">
+                <li><a href="#" class="hover:text-gray-400 w-full lg:w-auto block text-center py-3 font-semibold">Home</a></li>
+                <li><a href="#" class="hover:text-gray-400 w-full lg:w-auto block text-center py-3 font-semibold">Pricing</a></li>
+                <li><a href="#" class="hover:text-gray-400 w-full lg:w-auto block text-center py-3 font-semibold">Classes</a></li>
+                <li><a href="#" class="hover:text-gray-400 w-full lg:w-auto block text-center py-3 font-semibold">About Us</a></li>
+                <li><a href="#" class="hover:text-gray-400 w-full lg:w-auto block text-center py-3 font-semibold">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="text-white h-96 hero-section">
+        <div class="relative h-full">
+            <div class="absolute inset-0 bg-center bg-no-repeat bg-contain hero-bg">
+                <div class="container mx-auto text-center relative z-10 h-full flex">
+                    <div class="m-auto">
+                        <h2 class="text-2xl md:text-4xl font-semibold mb-4">Welcome to Gains & Grins Gym</h2>
+                        <p class="text-lg mb-6">Achieve your fitness goals with us.</p>
+                        <a href="#" class="bg-yellow-500 text-white hover:bg-yellow-400 py-3 px-12 rounded-full font-semibold transition duration-300 ease-in-out">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 lg:mt-0 py-12">
+                    <h3 class="text-2xl md:text-4xl font-semibold mb-16 text-gray-800 text-center relative pl-8 pb-2">
+                        <span class="absolute left-0 top-0">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/swirl-arrow-bottom-icon.png" fill="currentColor" class="w-8 h-full">
+                        </span>
+                        <span class="absolute left-0 bottom-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-full h-2">
+                                <!-- Replace this with your custom SVG for curvy lines -->
+                                <path d="M0 0 L10 10 L20 0"></path>
+                            </svg>
+                        </span>
+                        <span class="relative">
+                            About Us
+                            <span class="absolute -right-2 -bottom-6 opacity-10">
+                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/fitness-gym-yoga-spa/gym-dumbbell-icon.png" fill="currentColor" class="w-full h-full">
+                            </span>
+                        </span>
+                    </h3>
+                    <p class="mb-6 text-gray-700 leading-relaxed">
+                        Welcome to Gains & Grins Gym, where we are driven by a passionate commitment to help you transform your fitness aspirations into reality. Our core values revolve around creating a dynamic space that empowers individuals of all fitness levels to embark on a journey of self-discovery, growth, and holistic well-being.
+                    </p>
+                    <p class="mb-6 text-gray-700 leading-relaxed">
+                        Our gym boasts cutting-edge equipment and an array of facilities that cater to every facet of your fitness journey. From cardiovascular training zones to dedicated strength and conditioning areas, our space is meticulously designed to amplify your fitness experience.
+                    </p>
+                    <p class="mb-6 text-gray-700 leading-relaxed">
+                        Our team of seasoned trainers is not just here to instruct; they are mentors who are genuinely invested in your success. Their expertise spans a wide range of disciplines, ensuring that you receive personalized guidance that aligns with your goals and preferences. Whether you're a beginner taking your first steps or an experienced athlete looking to break barriers, our trainers are here to guide you every step of the way.
+                    </p>                    
+                </div>
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <img src="https://cdn.pixabay.com/photo/2016/12/02/08/30/personal-trainer-1877212_1280.png" alt="Gym Interior" class="rounded-lg shadow-md w-2/3 mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl md:text-4xl font-semibold text-center">Our Classes</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col justify-between">
+                    <div class="h-full flex flex-col">
+                        <img src="https://cdn.pixabay.com/photo/2020/04/09/16/35/fitness-5022191_1280.jpg" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <div class="h-full flex flex-col justify-between">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-800">Cardio Blast</h4>
+                            <p class="text-gray-600">Intense cardio workout to boost your endurance. Join us and feel the burn!</p>
+                            <div class="text-right">
+                                <a href="#" class="text-blue-500 hover:underline font-semibold">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col justify-between">
+                    <div class="h-full flex flex-col">
+                        <img src="https://cdn.pixabay.com/photo/2015/01/08/13/01/kettle-bell-592905_1280.jpg" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <div class="h-full flex flex-col justify-between">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-800">Strength Training</h4>
+                            <p class="text-gray-600">Build muscle and strength with our expert trainers. We're here to help you reach your goals.</p>
+                            <div class="text-right">
+                                <a href="#" class="text-blue-500 hover:underline font-semibold">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col justify-between">
+                    <div class="h-full flex flex-col">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/01/22/44/woman-2568410_1280.jpg" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <div class="h-full flex flex-col justify-between">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-800">Yoga & Meditation</h4>
+                            <p class="text-gray-600">Find balance and peace with our yoga classes. Connect your mind, body, and soul.</p>
+                            <div class="text-right">
+                                <a href="#" class="text-blue-500 hover:underline font-semibold">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>          
+
+    <!-- Contact Section -->
+    <section class="bg-blue-500 py-16">
+        <div class="container mx-auto text-center text-white">
+            <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
+            <p class="mb-6">Have questions or want to get started? Reach out to us today!</p>
+            <a href="#" class="bg-yellow-500 text-blue-900 hover:bg-yellow-400 py-2 px-6 rounded-full font-semibold transition duration-300 ease-in-out">Contact Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Gains & Grins Gym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
