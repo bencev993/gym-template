@@ -11,8 +11,82 @@ h3 {
     background: url('https://cdn.pixabay.com/photo/2020/04/03/20/49/gym-5000169_1280.jpg') no-repeat center center/cover;
 }
 
+/* Add transitions to the header for smooth animations */
+header {
+    transition: background-color 0.3s, opacity 0.3s, height 0.3s;
+}
+
+/* Apply styles for the sticky header */
+.sticky-header {
+    display: flex; /* Add display flex for vertical centering */
+    align-items: center; /* Center items vertically */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(34, 34, 34, 0.9);
+    opacity: 0.9;
+    height: 70px;
+    border-bottom: 2px solid #FFD700;
+}
+
+/* Update styles for elements inside the header */
+.sticky-header .text-2xl {
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.sticky-header .w-10,
+.sticky-header .h-10 {
+    width: 2.5rem; /* Adjust icon width as needed */
+    height: 2.5rem; /* Adjust icon height as needed */
+}
+
+.sticky-header .py-3 {
+    padding-top: 1rem; /* Adjust padding as needed */
+    padding-bottom: 1rem; /* Adjust padding as needed */
+}
+
+.sticky-header .lg:w-auto {
+    width: auto;
+}
+
+.custom-menu-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 0;
+    height: 0.5rem;
+    background-color: rgb(202 138 4);
+    transform: translateX(-50%);
+    transform: translateX(50%);
+    transform: translateY(50%);
+    transform-origin: center;
+    transition: width 0.3s ease, transform 0.3s ease;
+}
+
+.custom-menu-item:hover::before {
+    width: 100%;
+    transform: translateX(0);
+}
+
+.white-filter {
+    filter: brightness(0) invert(1);
+}
+
+.animation-part {
+    opacity: 0;
+    transform: scale(0.8); 
+    transition: opacity 1.8s ease, transform 0.8s ease;
+ }
+ 
+ .animation-part.animate {
+    opacity: 1;
+    transform: scale(1);
+ } 
+
 @media screen and (min-width: 1024px) {
-    .hero-section {
+    #hero-section {
         height: calc(100vh - 108px);
     }
 }
