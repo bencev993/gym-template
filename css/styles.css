@@ -8,7 +8,19 @@ h3 {
 }
 
 .hero-bg {
+    position: relative;
+    width: 100%;
     background: url('https://cdn.pixabay.com/photo/2020/04/03/20/49/gym-5000169_1280.jpg') no-repeat center center/cover;
+}
+
+.hero-bg::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.66);
 }
 
 /* Add transitions to the header for smooth animations */
@@ -74,19 +86,21 @@ header {
     filter: brightness(0) invert(1);
 }
 
-.animation-part {
-    opacity: 0;
-    transform: scale(0.8); 
-    transition: opacity 1.8s ease, transform 0.8s ease;
- }
- 
- .animation-part.animate {
-    opacity: 1;
-    transform: scale(1);
- } 
+@media screen and (min-width: 768px) {
+    .animation-part {
+        opacity: 0;
+        transform: scale(0.8); 
+        transition: opacity 1.8s ease, transform 0.8s ease;
+     }
+     
+    .animation-part.animate {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 @media screen and (min-width: 1024px) {
     #hero-section {
         height: calc(100vh - 108px);
-    }
+    } 
 }
