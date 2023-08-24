@@ -48,8 +48,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         const target = document.querySelector(anchor.getAttribute('href'));
         if (target) {
-            const offset = target.offsetTop; // Get the top offset of the target element
-            const headerHeight = document.querySelector('header').clientHeight; // Get the header height
+            const offset = target.offsetTop;
+            const headerHeight = document.querySelector('header').clientHeight;
 
             // Scroll to the target with smooth behavior and adjust the scrolling position
             window.scrollTo({
@@ -72,7 +72,6 @@ scrollToTopArrow.addEventListener('click', () => {
 });
 
 
-
 // Sticky header
 const header = document.querySelector('header');
 const nav = header.querySelector('nav');
@@ -89,8 +88,6 @@ window.addEventListener('scroll', () => {
         header.classList.remove('sticky-header');
     }
 });
-
-
 
 
 // Function to handle intersection

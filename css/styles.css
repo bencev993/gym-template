@@ -30,8 +30,8 @@ header {
 
 /* Apply styles for the sticky header */
 .sticky-header {
-    display: flex; /* Add display flex for vertical centering */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
@@ -44,18 +44,18 @@ header {
 
 /* Update styles for elements inside the header */
 .sticky-header .text-2xl {
-    font-size: 1.5rem; /* Adjust font size as needed */
+    font-size: 1.5rem;
 }
 
 .sticky-header .w-10,
 .sticky-header .h-10 {
-    width: 2.5rem; /* Adjust icon width as needed */
-    height: 2.5rem; /* Adjust icon height as needed */
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .sticky-header .py-3 {
-    padding-top: 1rem; /* Adjust padding as needed */
-    padding-bottom: 1rem; /* Adjust padding as needed */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .sticky-header .lg:w-auto {
@@ -101,6 +101,6 @@ header {
 
 @media screen and (min-width: 1024px) {
     #hero-section {
-        height: calc(100vh - 108px);
+        height: calc(100vh - 108px);    /* Height of the header */
     } 
 }
