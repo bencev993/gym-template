@@ -10,7 +10,7 @@ h3 {
 .hero-bg {
     position: relative;
     width: 100%;
-    background: url('./assets/images/fitness-5022191_1280.jpg') no-repeat center center/cover;
+    background: url('/gym-template/assets/images/fitness-5022191_1280.jpg') no-repeat center center/cover;
 }
 
 .hero-bg::before {
